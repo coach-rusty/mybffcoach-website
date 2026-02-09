@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Road Ahead — MyBFF Coach</title>
+  <meta name="description" content="The future of MyBFF Coach: deliberate growth, expanded domains, and long-term institutional impact.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" role="navigation">
+        <a href="platform.html">Platform</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-different.html">Why We're Different</a>
+        <a href="coach-jeff.html">Coach Jeff</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="road-ahead.html" class="active">Road Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h4 class="section-label">The Road Ahead</h4>
+        <h1>The Road Ahead</h1>
+        <p class="page-subtitle">Deliberate growth. Expanded reach. Lasting impact.</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container container--narrow">
+
+        <p>MyBFF Coach is designed to grow the same way it serves people: deliberately, consistently, and with care. The platform's roadmap reflects a belief that sustainable impact requires patience, and that scaling responsibly is more important than scaling quickly.</p>
+
+        <h2>Expanding Into New Domains</h2>
+
+        <p>Coach Jeff is the platform's first specialized implementation, but it will not be the last. The same architecture that enables persistent understanding for veterans with PTSD can be adapted to serve other populations where continuity and trust are essential.</p>
+
+        <p>Future domains under consideration include healthcare navigation, chronic condition management, elder care companionship, caregiver support, and institutional wellness programs. Each will be developed with the same deliberate care that shaped Coach Jeff &mdash; adapting the platform's capabilities to the specific needs, sensitivities, and ethical requirements of each audience.</p>
+
+        <h2>Deepening the Platform</h2>
+
+        <p>As the platform grows, its capabilities will deepen. The continuity architecture will become more sophisticated. The understanding layer will grow more nuanced. Safety and ethics frameworks will evolve alongside new domains and new challenges.</p>
+
+        <p>This is not a product that will be finished. It is a platform that will mature &mdash; growing more capable, more reliable, and more valuable over time.</p>
+
+        <h2>Institutional Partnerships</h2>
+
+        <p>MyBFF Coach is built for institutional trust. The platform's architecture, ethics framework, and long-term orientation are designed to meet the standards of government, healthcare, and institutional capital audiences. Partnerships will be formed with organizations that share the platform's commitment to durability, dignity, and genuine human impact.</p>
+
+        <h2>A Long-Term Commitment</h2>
+
+        <p>The road ahead is not defined by quarterly milestones or feature sprints. It is defined by a commitment to building something that serves people well over years and decades. MyBFF Coach is not built to impress quickly. It is built to last.</p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why We're Different — MyBFF Coach</title>
+  <meta name="description" content="What makes MyBFF Coach fundamentally different from conventional AI tools and digital health platforms.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" role="navigation">
+        <a href="platform.html">Platform</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-different.html" class="active">Why We're Different</a>
+        <a href="coach-jeff.html">Coach Jeff</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="road-ahead.html">Road Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h4 class="section-label">Why We're Different</h4>
+        <h1>Why We're Different</h1>
+        <p class="page-subtitle">Not a better chatbot. A different category entirely.</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container container--narrow">
+
+        <p>The AI landscape is crowded with tools that are technically impressive and emotionally forgettable. Systems that can generate text, answer questions, and process requests &mdash; but cannot remember who you are, what you care about, or why you came back.</p>
+
+        <p>MyBFF Coach was built from a fundamentally different premise. Not &ldquo;How do we make AI smarter?&rdquo; but &ldquo;How do we make AI matter to someone over time?&rdquo;</p>
+
+        <h2>Continuity Over Convenience</h2>
+
+        <p>Most platforms optimize for the next interaction. MyBFF Coach optimizes for the hundredth. The system is architected around the belief that real value emerges not from any single conversation, but from the compounding trust and understanding that develops over months and years.</p>
+
+        <p>This is not a feature that was added later. It is the foundation the entire platform was built upon.</p>
+
+        <h2>Trust Over Throughput</h2>
+
+        <p>The industry standard is to scale as fast as possible, serve as many users as possible, and optimize engagement metrics. MyBFF Coach measures success differently. The platform is designed for depth, not breadth &mdash; for lasting impact, not rapid adoption.</p>
+
+        <p>Systems designed to serve people over years require a different kind of architecture, a different kind of ethics, and a different kind of patience.</p>
+
+        <h2>Presence Over Performance</h2>
+
+        <p>MyBFF Coach is not built to impress on first contact. It is built to become more valuable the longer someone uses it. Less like a demo and more like a relationship &mdash; one that deepens through consistency, not novelty.</p>
+
+        <p>The platform doesn't try to be everything at once. It tries to be one thing, reliably, over time: a presence that understands, remembers, and stays.</p>
+
+        <h2>Human Understanding, Not Just Human Language</h2>
+
+        <p>Many AI systems can generate human-sounding language. Very few can maintain genuine human understanding across time. The difference is the difference between a conversation and a relationship. MyBFF Coach is built for the latter.</p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

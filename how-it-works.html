@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — MyBFF Coach</title>
+  <meta name="description" content="How MyBFF Coach works: persistent understanding, continuity architecture, and specialized implementations.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" role="navigation">
+        <a href="platform.html">Platform</a>
+        <a href="how-it-works.html" class="active">How It Works</a>
+        <a href="why-different.html">Why We're Different</a>
+        <a href="coach-jeff.html">Coach Jeff</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="road-ahead.html">Road Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h4 class="section-label">How It Works</h4>
+        <h1>How MyBFF Coach Works</h1>
+        <p class="page-subtitle">Continuity as architecture, not afterthought.</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container container--narrow">
+
+        <p>MyBFF Coach is built around a core architectural principle: understanding should compound over time. Every interaction contributes to a deepening model of the person &mdash; not just what they said, but how they feel, what they need, and what has changed since last time.</p>
+
+        <h2>Continuity Architecture</h2>
+
+        <p>Most AI systems treat each conversation as independent. They start from zero every time. MyBFF Coach does not. The platform maintains a persistent understanding layer that spans every interaction, building context and depth over weeks, months, and years.</p>
+
+        <p>This means the system can recognize patterns that emerge slowly. It can notice when something has shifted. It can return to something important that was mentioned weeks ago. It does not need to be reminded. It remembers.</p>
+
+        <h2>Adaptive Guidance</h2>
+
+        <p>MyBFF Coach does not deliver scripted responses or follow rigid protocols. The system adapts its approach based on accumulated understanding &mdash; adjusting tone, pacing, and focus to match where a person is, not where a program assumes they should be.</p>
+
+        <p>This adaptive layer is informed by behavioral principles that prioritize trust and safety. The system is designed to meet people where they are, not push them toward a predetermined outcome.</p>
+
+        <h2>Specialized Implementation Layer</h2>
+
+        <p>Above the core platform sits a specialization layer. Each implementation &mdash; like Coach Jeff &mdash; is configured with domain-specific knowledge, personality, communication patterns, and ethical boundaries appropriate to its audience.</p>
+
+        <p>This architecture allows the platform to serve vastly different populations while maintaining consistent standards of continuity, safety, and care at the foundation.</p>
+
+        <h2>Privacy and Safety by Design</h2>
+
+        <p>Persistent understanding requires persistent responsibility. Every piece of data the platform retains is governed by clear ethical boundaries, user consent, and safety protocols. The system is built so that continuity serves the person &mdash; never the other way around.</p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

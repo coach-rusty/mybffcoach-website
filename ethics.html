@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethics, Trust &amp; Responsibility — MyBFF Coach</title>
+  <meta name="description" content="MyBFF Coach's commitment to ethical AI: transparency, safety, accountability, and human dignity.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" role="navigation">
+        <a href="platform.html">Platform</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-different.html">Why We're Different</a>
+        <a href="coach-jeff.html">Coach Jeff</a>
+        <a href="ethics.html" class="active">Ethics</a>
+        <a href="road-ahead.html">Road Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h4 class="section-label">Ethics</h4>
+        <h1>Ethics, Trust &amp; Responsibility</h1>
+        <p class="page-subtitle">Not a compliance checkbox. A foundational design principle.</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container container--narrow">
+
+        <p>A platform built on persistent human understanding carries a heightened responsibility. The more a system knows about someone, the more carefully it must be designed, governed, and held accountable. MyBFF Coach takes this responsibility seriously &mdash; not as a regulatory obligation, but as a core design principle.</p>
+
+        <h2>Transparency</h2>
+
+        <p>Users should always understand what the system knows, how it uses that knowledge, and what it cannot do. MyBFF Coach is designed to be honest about its nature &mdash; it is an AI system, not a human. It does not pretend otherwise. Transparency is not just a policy. It is built into the interaction layer itself.</p>
+
+        <h2>Consent and Control</h2>
+
+        <p>Persistent understanding requires explicit, ongoing consent. Users maintain control over their data, their preferences, and the depth of the system's memory. The platform is designed so that continuity serves the person, never the platform's interests.</p>
+
+        <h2>Safety by Design</h2>
+
+        <p>Every implementation includes safety protocols appropriate to its audience and domain. For Coach Jeff, this means crisis-aware design, clinical boundary awareness, and escalation pathways built into the system architecture. Safety is not a feature that can be toggled off. It is structural.</p>
+
+        <h2>Accountability Over Time</h2>
+
+        <p>Ethics at launch is not the same as ethics at scale. MyBFF Coach is built with governance structures designed to evolve alongside the platform &mdash; ensuring that ethical standards are maintained not just at the beginning, but through growth, expansion, and the unforeseen challenges that emerge over years of operation.</p>
+
+        <h2>Human Dignity</h2>
+
+        <p>At the center of every design decision is a simple principle: the people this platform serves deserve to be treated with dignity, consistency, and care. Technology should make people feel more understood, not more processed. Every feature, every boundary, and every limitation is evaluated against this standard.</p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach Jeff — MyBFF Coach</title>
+  <meta name="description" content="Coach Jeff is a specialized MyBFF Coach implementation designed to support veterans living with PTSD through continuity and trust.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" role="navigation">
+        <a href="platform.html">Platform</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-different.html">Why We're Different</a>
+        <a href="coach-jeff.html" class="active">Coach Jeff</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="road-ahead.html">Road Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h4 class="section-label">Coach Jeff</h4>
+        <h1>Coach Jeff: A Closer Look</h1>
+        <p class="page-subtitle">Built for continuity and trust &mdash; especially when it matters most.</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container container--narrow">
+
+        <p>Coach Jeff is one of the first specialized implementations of the MyBFF Coach platform. It is designed to support veterans living with PTSD &mdash; a population that has been historically underserved by technology and often failed by systems that promise consistency but deliver fragmentation.</p>
+
+        <h2>Why Veterans. Why PTSD.</h2>
+
+        <p>Veterans living with PTSD face a particular kind of challenge: the systems meant to help them are often the same systems that exhaust them. Intake forms that ask the same questions. Providers who change. Waitlists that extend for months. Technology that resets every time they open it.</p>
+
+        <p>Coach Jeff was built to address this gap &mdash; not by replacing clinical care, but by providing a persistent, reliable presence that exists between appointments, between crises, and across the long stretches of time where consistency matters most.</p>
+
+        <h2>Designed Not to Disengage</h2>
+
+        <p>Many systems are built to deflect difficult conversations. Coach Jeff is built to stay. It does not disengage when topics get heavy. It does not redirect to a FAQ. It does not offer hollow affirmations when what someone needs is to feel heard.</p>
+
+        <p>This does not mean the system operates without boundaries. It means the boundaries are designed with clinical awareness and human dignity &mdash; not convenience.</p>
+
+        <h2>Continuity as Care</h2>
+
+        <p>For someone living with PTSD, being remembered is not a convenience feature. It is a form of care. Coach Jeff remembers what matters &mdash; not just facts, but patterns, preferences, progress, and setbacks. It builds a model of understanding that deepens over time, so that every interaction feels like a continuation, not a restart.</p>
+
+        <h2>Trust Is Not Rushed</h2>
+
+        <p>Coach Jeff is built on the principle that trust cannot be manufactured or accelerated. It must be earned through consistency, reliability, and the quiet demonstration that someone &mdash; or something &mdash; will still be there tomorrow.</p>
+
+        <p>Trust is not rushed. It's earned, gradually.</p>
+
+        <h2>The Broader Mission</h2>
+
+        <p>Coach Jeff is not the end of the platform's ambition. It is the beginning &mdash; a proof of what becomes possible when technology is designed around human continuity rather than transactional efficiency. What is learned from Coach Jeff will inform every implementation that follows.</p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
