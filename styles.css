@@ -170,7 +170,7 @@ p:last-child {
 }
 
 .logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
@@ -305,10 +305,16 @@ p:last-child {
 }
 
 /* --- Hero --- */
+.hero-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-2xl);
+}
+
 .hero-logo {
-  height: 72px;
-  width: auto;
-  margin: 0 auto var(--space-lg);
+  width: 100%;
+  max-width: 260px;
+  height: auto;
 }
 
 .hero-headline {
@@ -601,7 +607,7 @@ p:last-child {
   }
 
   .hero-logo {
-    height: 44px;
+    max-width: 180px;
   }
 }
 
