@@ -35,7 +35,7 @@
   --max-width-narrow: 740px;
   --max-width-wide:   960px;
 
-  --header-height:    72px;
+  --header-height:    80px;
 }
 
 /* --- Reset & Base --- */
@@ -170,7 +170,7 @@ p:last-child {
 }
 
 .logo-img {
-  height: 36px;
+  height: 48px;
   width: auto;
 }
 
@@ -306,7 +306,7 @@ p:last-child {
 
 /* --- Hero --- */
 .hero-logo {
-  height: 48px;
+  height: 72px;
   width: auto;
   margin: 0 auto var(--space-lg);
 }
@@ -601,7 +601,7 @@ p:last-child {
   }
 
   .hero-logo {
-    height: 36px;
+    height: 44px;
   }
 }
 
