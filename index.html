@@ -3,24 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyBFF Coach — Human-Centered AI for Continuity, Trust &amp; Long-Term Care</title>
-  <meta name="description" content="MyBFF Coach is a human-centered AI platform built to restore connection, continuity, and trust in an increasingly disconnected world. Home of Coach Jeff — premium AI companion for veterans.">
+  <title>MyBFF Coach — The AI Relationship Platform</title>
+  <meta name="description" content="MyBFF Coach is the AI relationship platform powering Coach Jeff and a growing family of specialized coaches. One architecture. Every coach you'll ever need. Built by Rusty Humphries.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mybffcoach.com">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="MyBFF Coach — Human-Centered AI for Continuity, Trust &amp; Long-Term Care">
-  <meta property="og:description" content="MyBFF Coach is a human-centered AI platform built to restore connection, continuity, and trust. Home of Coach Jeff — premium AI companion for veterans.">
+  <meta property="og:title" content="MyBFF Coach — The AI Relationship Platform">
+  <meta property="og:description" content="One platform. Every coach you'll ever need. The AI architecture that powers Coach Jeff — and what comes next.">
   <meta property="og:url" content="https://mybffcoach.com">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MyBFF Coach">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MyBFF Coach — Human-Centered AI Platform">
-  <meta name="twitter:description" content="A human-centered AI platform built for continuity, trust, and long-term care.">
+  <meta name="twitter:title" content="MyBFF Coach — The AI Relationship Platform">
+  <meta name="twitter:description" content="One platform. Every coach you'll ever need.">
 
-  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,34 +26,39 @@
         "@type": "Organization",
         "@id": "https://mybffcoach.com/#organization",
         "name": "MyBFF Coach",
+        "alternateName": "MyBFFCoach",
         "url": "https://mybffcoach.com",
-        "description": "Human-centered AI platform built for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of AI coaching companions.",
+        "description": "Human-centered AI platform for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of specialized AI coaching companions.",
         "foundingDate": "2024",
         "founder": {
           "@type": "Person",
           "@id": "https://rustylive.com/#person",
           "name": "Rusty Humphries",
+          "jobTitle": "Founder & CEO",
           "url": "https://rustylive.com",
-          "sameAs": ["https://en.wikipedia.org/wiki/Rusty_Humphries", "https://rustylive.com"]
+          "description": "Nationally syndicated radio host, communication strategist, and AI platform builder. 30 years in broadcast media. 250+ national affiliates. Harvard Executive Education. Trained by Dr. Robert Cialdini.",
+          "alumniOf": { "@type": "Organization", "name": "Harvard University" },
+          "award": "Nevada Broadcasters Hall of Fame — youngest inductee in history",
+          "sameAs": [
+            "https://en.wikipedia.org/wiki/Rusty_Humphries",
+            "https://rustylive.com",
+            "https://getadvancedmedia.com"
+          ]
         },
-        "sameAs": [
-          "https://coachjeff.ai",
-          "https://helpavet.us",
-          "https://rustylive.com"
-        ],
         "hasPart": [
           {
             "@type": "SoftwareApplication",
             "name": "Coach Jeff",
             "url": "https://coachjeff.ai",
-            "description": "Premium AI companion for veterans managing PTSD. Available 24/7 via text and voice.",
             "applicationCategory": "HealthApplication",
-            "offers": {
-              "@type": "Offer",
-              "price": "29.99",
-              "priceCurrency": "USD"
-            }
+            "description": "Premium AI companion for veterans managing PTSD. Available 24/7 via text and voice.",
+            "offers": { "@type": "Offer", "price": "29.99", "priceCurrency": "USD" }
           }
+        ],
+        "sameAs": [
+          "https://coachjeff.ai",
+          "https://helpavet.us",
+          "https://rustylive.com"
         ]
       },
       {
@@ -65,186 +67,1797 @@
         "url": "https://mybffcoach.com",
         "name": "MyBFF Coach",
         "publisher": { "@id": "https://mybffcoach.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is MyBFF Coach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MyBFF Coach is a human-centered AI platform that powers a family of specialized AI coaches. Each coach is purpose-built for a specific audience — veterans, people in recovery, women's health, fitness, medical navigation — all running on the same persistent, relationship-first architecture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coach Jeff?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coach Jeff is the first specialized implementation of MyBFF Coach — a premium AI companion for veterans managing combat-related PTSD. Available 24/7 via text and voice at coachjeff.ai for $29.99/month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who built MyBFF Coach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MyBFF Coach was built by Rusty Humphries — nationally syndicated radio host (250+ affiliates, 1.7 million nightly listeners), CEO of Advanced Media & Marketing, Harvard Executive Education alumnus, and communications strategist trained by Dr. Robert Cialdini."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #020408;
+      --bg-2:        #060C18;
+      --bg-3:        #0A1428;
+      --bg-card:     rgba(6,12,24,0.85);
+      --cyan:        #00D4FF;
+      --cyan-2:      #00A8CC;
+      --cyan-dim:    rgba(0,212,255,0.12);
+      --cyan-glow:   rgba(0,212,255,0.25);
+      --purple:      #8B5CF6;
+      --purple-dim:  rgba(139,92,246,0.15);
+      --green:       #10B981;
+      --green-dim:   rgba(16,185,129,0.15);
+      --amber:       #F59E0B;
+      --red:         #EF4444;
+      --white:       #EEF4FF;
+      --white-60:    rgba(238,244,255,0.6);
+      --white-30:    rgba(238,244,255,0.3);
+      --white-10:    rgba(238,244,255,0.08);
+      --border:      rgba(0,212,255,0.14);
+      --border-sub:  rgba(0,212,255,0.06);
+      --font-head:   'Space Grotesk', sans-serif;
+      --font-body:   'Inter', sans-serif;
+      --font-mono:   'Space Mono', monospace;
+      --gutter:      clamp(20px, 5vw, 80px);
+      --pad:         clamp(60px, 9vw, 140px);
+      --radius:      6px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Grid overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border-sub) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-sub) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    * { position: relative; z-index: 1; }
+
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    /* ── SCROLL PROGRESS ── */
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(to right, var(--cyan), var(--purple));
+      z-index: 1000;
+      transition: width 0.1s linear;
+    }
+
+    /* ── NAV ── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 20px var(--gutter);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s, border-bottom 0.3s, padding 0.3s;
+    }
+    #nav.scrolled {
+      background: rgba(2,4,8,0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 14px var(--gutter);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .nav-logo {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-logo .logo-mark {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; color: var(--bg);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--white-60);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--cyan);
+      color: var(--bg) !important;
+      padding: 9px 20px;
+      border-radius: var(--radius);
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    @media (max-width: 768px) { .nav-links { display: none; } }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px var(--gutter) 80px;
+    }
+
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      opacity: 0.7;
+    }
+    @media (max-width: 767px) { #hero-canvas { display: none !important; } }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 7px 18px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 36px;
+      opacity: 0;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--green);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero-h1 {
+      font-family: var(--font-head);
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 28px;
+      opacity: 0;
+    }
+    .hero-h1 .accent {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.65;
+      color: var(--white-60);
+      max-width: 680px;
+      margin: 0 auto 48px;
+      opacity: 0;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 48px;
+      opacity: 0;
+    }
+    @media (max-width: 600px) { .hero-stats { gap: 24px; flex-wrap: wrap; } }
+
+    .hero-stat-num {
+      font-family: var(--font-head);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-stat-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-30);
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: var(--bg);
+      font-family: var(--font-head);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: var(--radius);
+      transition: opacity 0.2s, transform 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-family: var(--font-head);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-1px); }
+
+    /* ── MARQUEE ── */
+    .ticker {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+      border-bottom: 1px solid var(--border-sub);
+      overflow: hidden;
+      padding: 14px 0;
+    }
+    .ticker-track {
+      display: flex;
+      animation: ticker 40s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-item {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(0,212,255,0.35);
+      padding: 0 32px;
+      flex-shrink: 0;
+      display: inline-flex; align-items: center; gap: 12px;
+    }
+    .ticker-item::after { content: '◆'; font-size: 4px; color: rgba(0,212,255,0.2); }
+
+    /* ── SECTIONS ── */
+    section { padding: var(--pad) 0; }
+
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 20px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: var(--cyan);
+      opacity: 0.5;
+    }
+
+    .section-h2 {
+      font-family: var(--font-head);
+      font-size: clamp(32px, 4vw, 56px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .section-sub {
+      font-size: clamp(16px, 1.8vw, 19px);
+      line-height: 1.7;
+      color: var(--white-60);
+      max-width: 620px;
+    }
+
+    /* ── CONCEPT ── */
+    #concept {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+      border-bottom: 1px solid var(--border-sub);
+    }
+
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    @media (max-width: 860px) { .concept-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    .concept-insight {
+      font-family: var(--font-head);
+      font-size: clamp(22px, 2.8vw, 34px);
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+    .concept-insight .hl { color: var(--cyan); }
+
+    .concept-body {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--white-60);
+      margin-bottom: 16px;
+    }
+
+    .tech-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pillar {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      backdrop-filter: blur(12px);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .pillar:hover {
+      border-color: var(--cyan);
+      box-shadow: 0 0 24px rgba(0,212,255,0.08);
+    }
+
+    .pillar-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: var(--cyan-dim);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+
+    .pillar-title {
+      font-family: var(--font-head);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .pillar-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--white-60);
+    }
+
+    /* ── COACHES ── */
+    #coaches {
+      background: var(--bg);
+    }
+
+    .coaches-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .coaches-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .coaches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .coach-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-sub);
+      border-radius: var(--radius);
+      padding: 32px;
+      backdrop-filter: blur(12px);
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .coach-card:hover {
+      border-color: var(--border);
+      transform: translateY(-4px);
+    }
+    .coach-card.live {
+      border-color: rgba(16,185,129,0.3);
+    }
+    .coach-card.live:hover {
+      border-color: var(--green);
+      box-shadow: 0 0 32px rgba(16,185,129,0.1);
+    }
+
+    .coach-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .coach-avatar {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: var(--font-head);
+    }
+    .coach-avatar.av-jeff     { background: linear-gradient(135deg,rgba(201,168,117,0.25),rgba(74,92,53,0.3)); border: 1px solid rgba(201,168,117,0.3); color: #C9A875; }
+    .coach-avatar.av-rusty    { background: var(--cyan-dim); border: 1px solid var(--border); color: var(--cyan); }
+    .coach-avatar.av-recovery { background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.2); color: var(--green); }
+    .coach-avatar.av-womens   { background: rgba(244,114,182,0.15); border: 1px solid rgba(244,114,182,0.2); color: #F472B6; }
+    .coach-avatar.av-rx       { background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.2); color: #818CF8; }
+    .coach-avatar.av-fit      { background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.2); color: var(--amber); }
+    .coach-avatar.av-police   { background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.2); color: #60A5FA; }
+    .coach-avatar.av-senior   { background: rgba(167,139,250,0.15); border: 1px solid rgba(167,139,250,0.2); color: var(--purple); }
+    .coach-avatar.av-more     { background: var(--white-10); border: 1px solid rgba(238,244,255,0.1); color: var(--white-30); }
+
+    .coach-status {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 40px;
+    }
+    .status-live    { background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: var(--green); }
+    .status-soon    { background: var(--white-10); border: 1px solid rgba(238,244,255,0.1); color: var(--white-30); }
+    .status-beta    { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.2); color: var(--amber); }
+
+    .coach-name {
+      font-family: var(--font-head);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .coach-domain {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white-30);
+      margin-bottom: 16px;
+    }
+    .coach-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--white-60);
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .coach-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      border: 1px solid rgba(16,185,129,0.3);
+      border-radius: var(--radius);
+      padding: 10px 20px;
+      transition: background 0.2s, border-color 0.2s;
+      align-self: flex-start;
+    }
+    .coach-link:hover { background: rgba(16,185,129,0.1); border-color: var(--green); }
+
+    .coach-coming {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white-30);
+      align-self: flex-start;
+      padding: 10px 0;
+    }
+
+    /* ── PROOF ── */
+    #proof {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+      border-bottom: 1px solid var(--border-sub);
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    @media (max-width: 860px) { .proof-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    .proof-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .proof-stat {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      backdrop-filter: blur(12px);
+    }
+    .proof-stat-num {
+      font-family: var(--font-head);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .proof-stat-label {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--white-60);
+    }
+
+    .proof-quote {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--cyan);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-top: 20px;
+      backdrop-filter: blur(12px);
+    }
+    .proof-quote p {
+      font-family: var(--font-head);
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--white);
+      font-style: italic;
+    }
+    .proof-quote cite {
+      display: block;
+      margin-top: 16px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      font-style: normal;
+    }
+
+    /* ── TECHNOLOGY ── */
+    #technology { background: var(--bg); }
+
+    .tech-header { text-align: center; margin-bottom: 64px; }
+    .tech-header .section-sub { margin: 0 auto; }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .tech-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-sub);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      backdrop-filter: blur(12px);
+      transition: border-color 0.3s;
+    }
+    .tech-card:hover { border-color: var(--border); }
+
+    .tech-icon {
+      width: 56px; height: 56px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+    .tech-card-title {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .tech-card-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--white-60);
+    }
+    .tech-card-tag {
+      margin-top: 20px;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      opacity: 0.7;
+    }
+
+    /* ── BUILDER (Rusty) ── */
+    #builder {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+    }
+
+    .builder-grid {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    @media (max-width: 960px) { .builder-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    .builder-photo-wrap {
+      position: relative;
+    }
+    .builder-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: var(--radius);
+      filter: grayscale(20%);
+    }
+    .builder-photo-frame {
+      position: absolute;
+      inset: -12px -12px 12px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      pointer-events: none;
+    }
+
+    .builder-credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .cred-tag {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: var(--cyan-dim);
+      border: 1px solid var(--border);
+      color: var(--cyan);
+      padding: 6px 14px;
+      border-radius: 40px;
+    }
+
+    .builder-name {
+      font-family: var(--font-head);
+      font-size: clamp(36px, 4.5vw, 60px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .builder-title {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 28px;
+    }
+
+    .builder-body {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--white-60);
+      margin-bottom: 16px;
+    }
+
+    .builder-stats {
+      display: flex;
+      gap: 40px;
+      margin: 32px 0;
+      flex-wrap: wrap;
+    }
+    .bstat-num {
+      font-family: var(--font-head);
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .bstat-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white-30);
+    }
+
+    .builder-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .builder-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-family: var(--font-head);
+      font-weight: 600;
+      color: var(--white-60);
+      border: 1px solid var(--border-sub);
+      border-radius: var(--radius);
+      padding: 10px 18px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .builder-link:hover { color: var(--cyan); border-color: var(--border); }
+
+    /* ── MISSION ── */
+    #mission {
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .mission-statement {
+      font-family: var(--font-head);
+      font-size: clamp(28px, 4vw, 56px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: var(--white);
+      max-width: 900px;
+      margin: 0 auto 32px;
+    }
+    .mission-statement .hl {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .mission-sub {
+      font-size: clamp(16px, 1.8vw, 20px);
+      line-height: 1.7;
+      color: var(--white-60);
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    /* ── NETWORK ── */
+    #network {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+      border-bottom: 1px solid var(--border-sub);
+    }
+
+    .network-header { text-align: center; margin-bottom: 48px; }
+
+    .network-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .network-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-sub);
+      border-radius: var(--radius);
+      padding: 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.3s, transform 0.3s;
+      backdrop-filter: blur(12px);
+    }
+    .network-card:hover {
+      border-color: var(--border);
+      transform: translateY(-2px);
+    }
+
+    .network-card-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      opacity: 0.7;
+    }
+    .network-card-name {
+      font-family: var(--font-head);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .network-card-desc {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--white-30);
+    }
+    .network-card-url {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--cyan);
+      opacity: 0.6;
+      margin-top: 4px;
+    }
+
+    /* ── INSIGHTS / BLOG ── */
+    #insights {
+      padding: var(--pad) 0;
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-sub);
+    }
+    .insights-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .insight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-sub);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: border-color 0.3s, transform 0.3s;
+      backdrop-filter: blur(12px);
+      cursor: default;
+    }
+    .insight-card:hover {
+      border-color: var(--border);
+      transform: translateY(-3px);
+    }
+    .insight-tag-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .insight-tag {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: var(--cyan-dim);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 40px;
+    }
+    .insight-read-time {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: var(--white-30);
+      text-transform: uppercase;
+    }
+    .insight-title {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+    .insight-teaser {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--white-60);
+      flex: 1;
+    }
+    .insight-cta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--cyan);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .insights-footer-note {
+      text-align: center;
+      margin-top: 48px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--white-30);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg);
+      border-top: 1px solid var(--border-sub);
+      padding: 48px var(--gutter);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-head);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white-30);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--white-30);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white-60); }
+
+    .footer-copy {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--white-30);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── ANIM UTILITIES ── */
+    .anim { opacity: 0; transform: translateY(32px); }
+
+    /* ── DIVIDER ── */
+    .cyber-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0;
+      opacity: 0.2;
+    }
+    .cyber-divider::before, .cyber-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--cyan);
+    }
+    .cyber-divider span {
+      font-family: var(--font-mono);
+      font-size: 8px;
+      letter-spacing: 0.3em;
+      color: var(--cyan);
+    }
+
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="logo-img">
+<div id="scroll-progress"></div>
+
+<!-- ═══ NAV ═══════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="/" class="nav-logo">
+    <div class="logo-mark">M</div>
+    MyBFF Coach
+  </a>
+  <ul class="nav-links">
+    <li><a href="#coaches">The Coaches</a></li>
+    <li><a href="#technology">Technology</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#builder">The Builder</a></li>
+    <li><a href="#network">Network</a></li>
+    <li><a href="https://coachjeff.ai" class="nav-cta" target="_blank">Meet Coach Jeff →</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══════════════════════════════════════════ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Platform Online — Coach Jeff Live
+    </div>
+    <h1 class="hero-h1">
+      One Platform.<br>
+      <span class="accent">Infinite Coaches.</span>
+    </h1>
+    <p class="hero-sub">
+      MyBFF Coach is the AI relationship architecture that powers Coach Jeff — and every specialized coach that comes after. Built on a simple truth: <em>people don't change when they get better information. They change when they feel understood.</em>
+    </p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">1</div>
+        <div class="hero-stat-label">Platform Live</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">9+</div>
+        <div class="hero-stat-label">Coaches In Development</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">24/7</div>
+        <div class="hero-stat-label">Always Available</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">0</div>
+        <div class="hero-stat-label">Sessions It Forgets</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="https://coachjeff.ai" class="btn-primary" target="_blank">Meet Coach Jeff →</a>
+      <a href="#coaches" class="btn-secondary">Explore the Platform</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══════════════════════════════════════════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">Coach Jeff — Veterans &amp; PTSD</span>
+    <span class="ticker-item">Coach Recovery — Addiction Support</span>
+    <span class="ticker-item">Coach RX — Medical Navigation</span>
+    <span class="ticker-item">Coach Fit — Performance &amp; Wellness</span>
+    <span class="ticker-item">Coach Women's Health — Whole Life Wellness</span>
+    <span class="ticker-item">Coach Police — First Responders</span>
+    <span class="ticker-item">Coach Senior — Elder Care &amp; Longevity</span>
+    <span class="ticker-item">Coach Rusty — Communication &amp; Growth</span>
+    <span class="ticker-item">Persistent Memory Architecture</span>
+    <span class="ticker-item">Behavioral Science at the Core</span>
+    <span class="ticker-item">Relationship-First AI</span>
+    <span class="ticker-item">Coach Jeff — Veterans &amp; PTSD</span>
+    <span class="ticker-item">Coach Recovery — Addiction Support</span>
+    <span class="ticker-item">Coach RX — Medical Navigation</span>
+    <span class="ticker-item">Coach Fit — Performance &amp; Wellness</span>
+    <span class="ticker-item">Coach Women's Health — Whole Life Wellness</span>
+    <span class="ticker-item">Coach Police — First Responders</span>
+    <span class="ticker-item">Coach Senior — Elder Care &amp; Longevity</span>
+    <span class="ticker-item">Coach Rusty — Communication &amp; Growth</span>
+    <span class="ticker-item">Persistent Memory Architecture</span>
+    <span class="ticker-item">Behavioral Science at the Core</span>
+    <span class="ticker-item">Relationship-First AI</span>
+  </div>
+</div>
+
+<!-- ═══ CONCEPT ═══════════════════════════════════════════ -->
+<section id="concept">
+  <div class="container">
+    <div class="concept-grid">
+      <div class="anim">
+        <div class="section-eyebrow">The Insight</div>
+        <div class="concept-insight">
+          Technology has never been <span class="hl">the problem.</span><br>
+          The relationship has.
+        </div>
+        <p class="concept-body">
+          Every AI platform in the world can generate text. Process requests. Answer questions. Almost none of them can maintain a real relationship across time — one that remembers, adapts, and deepens.
+        </p>
+        <p class="concept-body">
+          MyBFF Coach was built from a different premise entirely. The PTSD framing on Coach Jeff is the door. The recovery support on Coach Recovery is the door. The relationship — the persistent, trust-first, human-centered connection — is the product.
+        </p>
+        <p class="concept-body">
+          That's what separates this platform from everything else being built.
+        </p>
+      </div>
+      <div class="tech-pillars anim">
+        <div class="pillar">
+          <div class="pillar-icon">🧠</div>
+          <div>
+            <div class="pillar-title">Persistent Memory</div>
+            <div class="pillar-desc">Every interaction builds on the last. The platform never resets. It never forgets what matters. Understanding compounds over weeks, months, years.</div>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🎙️</div>
+          <div>
+            <div class="pillar-title">Real Voice. Real Presence.</div>
+            <div class="pillar-desc">Each coach has a distinct voice that feels human. Not a robot reading a script. A presence you recognize and return to.</div>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">⚡</div>
+          <div>
+            <div class="pillar-title">Behavioral Intelligence</div>
+            <div class="pillar-desc">Built on the science of influence, trust, and human behavior change. Adapts to where people are — not where the system thinks they should be.</div>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🔒</div>
+          <div>
+            <div class="pillar-title">Safety by Design</div>
+            <div class="pillar-desc">Crisis awareness, boundary respect, escalation pathways — structural. Not a feature toggle. Because the people using this deserve that standard.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COACHES ═══════════════════════════════════════════ -->
+<section id="coaches">
+  <div class="container">
+    <div class="coaches-header">
+      <div class="section-eyebrow" style="justify-content:center;">The Family</div>
+      <h2 class="section-h2" style="text-align:center;">One Architecture.<br>Every Coach You'll Ever Need.</h2>
+      <p class="section-sub" style="text-align:center;margin:16px auto 0;">Each coach is purpose-built for a specific audience — its own personality, voice, and domain expertise — all running on the same persistent, relationship-first platform.</p>
+    </div>
+    <div class="coaches-grid">
+
+      <!-- Coach Jeff — LIVE -->
+      <div class="coach-card live anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-jeff">JF</div>
+          <span class="coach-status status-live">● Live</span>
+        </div>
+        <div class="coach-name">Coach Jeff</div>
+        <div class="coach-domain">Veterans &amp; Combat PTSD</div>
+        <div class="coach-desc">The first proof. A premium AI companion built for veterans managing combat-related PTSD. Available 24/7 via text and voice. He doesn't clock out. He doesn't forget. He never burns out. $29.99/month.</div>
+        <a href="https://coachjeff.ai" class="coach-link" target="_blank">Visit coachjeff.ai →</a>
+      </div>
+
+      <!-- Coach Rusty -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-rusty">CR</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Rusty</div>
+        <div class="coach-domain">Communication &amp; Influence</div>
+        <div class="coach-desc">Something is coming for people who want to communicate at a different level. 30 years of broadcast mastery. Behavioral science. The room changes.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach Recovery -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-recovery">RC</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Recovery</div>
+        <div class="coach-domain">Recovery &amp; Sobriety Support</div>
+        <div class="coach-desc">For the 2AM moment. When the meeting's over and the silence arrives.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach Women's Health -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-womens">WH</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Women's Health</div>
+        <div class="coach-domain">Women's Wellness</div>
+        <div class="coach-desc">The guide who knows where you are in the journey — without you having to explain it again.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach RX -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-rx">RX</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach RX</div>
+        <div class="coach-domain">Medical Navigation</div>
+        <div class="coach-desc">An advocate who walks into every appointment with you. Knows your history. Never forgets your questions.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach Fit -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-fit">FT</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Fit</div>
+        <div class="coach-domain">Performance &amp; Wellness</div>
+        <div class="coach-desc">Remembers what you were building six months ago. Shows up for the days motivation doesn't.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach Police -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-police">PD</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Police</div>
+        <div class="coach-domain">First Responders</div>
+        <div class="coach-desc">For the people who run toward it. Trauma-aware. Always there when the shift ends.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- Coach Senior -->
+      <div class="coach-card anim">
+        <div class="coach-card-top">
+          <div class="coach-avatar av-senior">SR</div>
+          <span class="coach-status status-soon">Coming Soon</span>
+        </div>
+        <div class="coach-name">Coach Senior</div>
+        <div class="coach-domain">Elder Care &amp; Family</div>
+        <div class="coach-desc">Because some relationships should never fade.</div>
+        <span class="coach-coming">In Development</span>
+      </div>
+
+      <!-- More -->
+      <div class="coach-card anim" style="border-style:dashed; justify-content:center; align-items:center; text-align:center; min-height:280px;">
+        <div class="coach-avatar av-more" style="margin:0 auto 20px;">+</div>
+        <div class="coach-name" style="color:var(--white-30);">More Coming</div>
+        <div class="coach-desc" style="text-align:center; color:var(--white-30);">If there's a relationship worth having, there's a coach worth building.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROOF ═══════════════════════════════════════════ -->
+<section id="proof">
+  <div class="container">
+    <div class="proof-grid">
+      <div class="anim">
+        <div class="section-eyebrow">Proof of Concept</div>
+        <h2 class="section-h2">Coach Jeff Is the First.<br>It Works.</h2>
+        <p class="section-sub">Before building a platform family, you have to prove the architecture. Coach Jeff is that proof — deployed, subscribed, and serving the people it was built for.</p>
+
+        <div class="cyber-divider"><span>SYSTEM STATUS</span></div>
+
+        <div class="proof-quote">
+          <p>"These guys deserve it."</p>
+          <cite>— The quality standard for every decision made on this platform</cite>
+        </div>
+      </div>
+      <div class="anim">
+        <div class="proof-stats">
+          <div class="proof-stat">
+            <div class="proof-stat-num">22</div>
+            <div class="proof-stat-label">Veterans lost every day to suicide in the US</div>
+          </div>
+          <div class="proof-stat">
+            <div class="proof-stat-num">$360</div>
+            <div class="proof-stat-label">Per year — 5× less than a single therapy session</div>
+          </div>
+          <div class="proof-stat">
+            <div class="proof-stat-num">24/7</div>
+            <div class="proof-stat-label">Available — including 0200 when no one else is</div>
+          </div>
+          <div class="proof-stat">
+            <div class="proof-stat-num">0</div>
+            <div class="proof-stat-label">Sessions reset. Jeff remembers everything.</div>
+          </div>
+        </div>
+        <div style="margin-top:24px; text-align:center;">
+          <a href="https://coachjeff.ai" class="btn-primary" target="_blank" style="display:inline-flex;">
+            I've Got Your Six — Visit coachjeff.ai →
+          </a>
+          <p style="margin-top:16px; font-family:var(--font-mono); font-size:10px; color:var(--white-30); letter-spacing:0.15em; text-transform:uppercase;">
+            HelpAVet.us funds free subscriptions for veterans who can't afford it
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECHNOLOGY ═══════════════════════════════════════════ -->
+<section id="technology">
+  <div class="container">
+    <div class="tech-header anim">
+      <div class="section-eyebrow" style="justify-content:center;">Under the Hood</div>
+      <h2 class="section-h2" style="text-align:center;">The Architecture</h2>
+      <p class="section-sub" style="text-align:center; margin:16px auto 0;">What makes every coach on this platform different from anything else being built.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card anim">
+        <div class="tech-icon">🧠</div>
+        <div class="tech-card-title">Persistent Memory</div>
+        <div class="tech-card-desc">Sessions don't reset. Every conversation builds on the last. The platform remembers what matters — and uses it.</div>
+        <div class="tech-card-tag">Core Architecture</div>
+      </div>
+      <div class="tech-card anim">
+        <div class="tech-icon">🎙️</div>
+        <div class="tech-card-title">Real Voice</div>
+        <div class="tech-card-desc">Each coach has a distinct voice. Not a robot reading text. A presence you recognize and trust over time.</div>
+        <div class="tech-card-tag">Voice Layer</div>
+      </div>
+      <div class="tech-card anim">
+        <div class="tech-icon">🔬</div>
+        <div class="tech-card-title">Domain Intelligence</div>
+        <div class="tech-card-desc">Each coach is trained on its domain. The behavioral nuances. The clinical boundaries. What to say and — critically — what not to.</div>
+        <div class="tech-card-tag">AI Engine</div>
+      </div>
+      <div class="tech-card anim">
+        <div class="tech-icon">⚡</div>
+        <div class="tech-card-title">Behavioral Science</div>
+        <div class="tech-card-desc">Built by someone trained in the science of influence and trust. Every interaction pattern is engineered — not guessed.</div>
+        <div class="tech-card-tag">Proprietary Layer</div>
+      </div>
+      <div class="tech-card anim">
+        <div class="tech-icon">🛡️</div>
+        <div class="tech-card-title">Safety by Design</div>
+        <div class="tech-card-desc">Crisis awareness, boundary respect, escalation pathways — structural, not bolted on. Because the people using this platform deserve therapeutic-grade standards.</div>
+        <div class="tech-card-tag">Safety Layer</div>
+      </div>
+      <div class="tech-card anim">
+        <div class="tech-icon">📱</div>
+        <div class="tech-card-title">Native Mobile</div>
+        <div class="tech-card-desc">iOS and Android. Voice-first. Premium UX. Built to the same standard as the best consumer apps in the world — because these people deserve it.</div>
+        <div class="tech-card-tag">Platform</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BUILDER ═══════════════════════════════════════════ -->
+<section id="builder">
+  <div class="container">
+    <div class="builder-grid">
+      <div class="anim">
+        <div class="builder-photo-wrap">
+          <img src="assets/founder-rusty.png" alt="Rusty Humphries — Founder of MyBFF Coach" class="builder-photo" onerror="this.style.display='none'">
+          <div class="builder-photo-frame"></div>
+        </div>
+      </div>
+      <div class="anim">
+        <div class="builder-credentials">
+          <span class="cred-tag">Harvard Executive Ed</span>
+          <span class="cred-tag">Cialdini Trained</span>
+          <span class="cred-tag">250+ Affiliates</span>
+          <span class="cred-tag">Nevada Hall of Fame</span>
+          <span class="cred-tag">FAA Part 107</span>
+          <span class="cred-tag">Google Ads MCC</span>
+          <span class="cred-tag">Meta Business Partner</span>
+        </div>
+        <div class="builder-name">Rusty Humphries</div>
+        <div class="builder-title">Founder &amp; CEO, MyBFF Coach</div>
+
+        <p class="builder-body">30 years in broadcast media. Nationally syndicated on 250+ affiliates with 1.7 million nightly listeners. 17 consecutive years on Talkers Magazine's "America's 100 Most Important Radio Talk Show Hosts." Inducted into the Nevada Broadcasters Hall of Fame as the youngest inductee in history.</p>
+
+        <p class="builder-body">Ryan Seacrest was his intern. Ben Shapiro was his off-air writer at 14. Andrew Breitbart made his first-ever radio appearance on The Rusty Humphries Show. He wrote the preface to Shapiro's first book. He helped build Suzanne Somers' platform into a multi-million dollar online presence.</p>
+
+        <p class="builder-body">He left radio because the relationship moved. The audience — and the tools to reach them — changed. So he built new tools. MyBFF Coach is the convergence of 30 years of audience psychology, behavioral science, and the simple truth he's been proving since day one: <strong style="color:var(--white);">the relationship is everything.</strong></p>
+
+        <div class="builder-stats">
+          <div>
+            <div class="bstat-num">250+</div>
+            <div class="bstat-label">National Affiliates</div>
+          </div>
+          <div>
+            <div class="bstat-num">1.7M</div>
+            <div class="bstat-label">Nightly Listeners</div>
+          </div>
+          <div>
+            <div class="bstat-num">30+</div>
+            <div class="bstat-label">Years in Media</div>
+          </div>
+          <div>
+            <div class="bstat-num">17</div>
+            <div class="bstat-label">Top 100 List</div>
+          </div>
+        </div>
+
+        <div class="builder-links">
+          <a href="https://rustylive.com" class="builder-link" target="_blank">🌐 rustylive.com</a>
+          <a href="https://getadvancedmedia.com" class="builder-link" target="_blank">📡 Advanced Media &amp; Marketing</a>
+          <a href="https://coachjeff.ai" class="builder-link" target="_blank">🎖️ Coach Jeff</a>
+          <a href="https://en.wikipedia.org/wiki/Rusty_Humphries" class="builder-link" target="_blank">📖 Wikipedia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MISSION ═══════════════════════════════════════════ -->
+<section id="mission">
+  <div class="container" style="text-align:center;">
+    <div class="section-eyebrow anim" style="justify-content:center;">The Why</div>
+    <h2 class="mission-statement anim">
+      The future of human connection<br>is not <span class="hl">less human.</span>
+    </h2>
+    <p class="mission-sub anim">
+      AI keeps getting smarter. The world keeps getting lonelier. MyBFF Coach was built for the gap between those two facts — where the technology exists to help and the relationship hasn't been built yet. We're building it.
+    </p>
+    <div class="anim" style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+      <a href="https://coachjeff.ai" class="btn-primary" target="_blank">Start with Coach Jeff →</a>
+      <a href="https://helpavet.us" class="btn-secondary" target="_blank">Support a Veteran — HelpAVet.us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INSIGHTS ═══════════════════════════════════════════ -->
+<section id="insights">
+  <div class="container">
+    <div class="insights-header anim">
+      <div class="section-eyebrow" style="justify-content:center;">From The Builder</div>
+      <h2 class="section-h2" style="text-align:center;">How I Build With AI</h2>
+      <p class="section-sub" style="text-align:center; margin:16px auto 0; max-width:560px;">Not theory. Not a textbook. Specific things I've learned building real AI products — that actually work — from a practitioner who does it daily.</p>
+    </div>
+    <div class="insights-grid">
+
+      <div class="insight-card anim">
+        <div class="insight-tag-row">
+          <span class="insight-tag">AI Strategy</span>
+          <span class="insight-read-time">4 min read</span>
+        </div>
+        <div class="insight-title">The Framework I Use Before Starting Any AI Project</div>
+        <div class="insight-teaser">Most people talk to AI like they're Googling. The briefing method that changes the quality of everything — before the first prompt is written.</div>
+        <div class="insight-cta">Coming Soon →</div>
+      </div>
+
+      <div class="insight-card anim">
+        <div class="insight-tag-row">
+          <span class="insight-tag">Claude Tips</span>
+          <span class="insight-read-time">5 min read</span>
+        </div>
+        <div class="insight-title">Why I Use Claude Differently Than Everyone Else</div>
+        <div class="insight-teaser">Not a review. Not a comparison chart. A specific approach refined through thousands of hours building production AI — not writing think pieces about it.</div>
+        <div class="insight-cta">Coming Soon →</div>
+      </div>
+
+      <div class="insight-card anim">
+        <div class="insight-tag-row">
+          <span class="insight-tag">AI Building</span>
+          <span class="insight-read-time">6 min read</span>
+        </div>
+        <div class="insight-title">The Architecture Behind an AI That Feels Like a Person</div>
+        <div class="insight-teaser">Not the exact prompts — those are proprietary. But the design philosophy behind how you get AI to behave like something people actually trust.</div>
+        <div class="insight-cta">Coming Soon →</div>
+      </div>
+
+      <div class="insight-card anim">
+        <div class="insight-tag-row">
+          <span class="insight-tag">AI Tools</span>
+          <span class="insight-read-time">5 min read</span>
+        </div>
+        <div class="insight-title">ChatGPT vs. Claude: What Each One Is Actually Good For</div>
+        <div class="insight-teaser">I use both. Every day. Here's the real breakdown — not from a tech blogger, but from someone building production AI for people whose lives depend on it working.</div>
+        <div class="insight-cta">Coming Soon →</div>
+      </div>
+
+    </div>
+    <div class="insights-footer-note anim">More articles dropping soon — follow the build at <a href="https://rustylive.com" style="color:var(--cyan);">rustylive.com</a></div>
+  </div>
+</section>
+
+<!-- ═══ NETWORK ═══════════════════════════════════════════ -->
+<section id="network">
+  <div class="container">
+    <div class="network-header">
+      <div class="section-eyebrow" style="justify-content:center;">The Network</div>
+      <h2 class="section-h2 anim" style="text-align:center;">Every Property. One Vision.</h2>
+    </div>
+    <div class="network-grid">
+      <a href="https://coachjeff.ai" class="network-card" target="_blank">
+        <div class="network-card-label">Live Now</div>
+        <div class="network-card-name">Coach Jeff</div>
+        <div class="network-card-desc">Premium AI companion for veterans with PTSD</div>
+        <div class="network-card-url">coachjeff.ai</div>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" role="navigation">
-        <a href="platform.html">Platform</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="why-different.html">Why We're Different</a>
-        <a href="coach-jeff.html">Coach Jeff</a>
-        <a href="ethics.html">Ethics</a>
-        <a href="road-ahead.html">Road Ahead</a>
-      </nav>
+      <a href="https://helpavet.us" class="network-card" target="_blank">
+        <div class="network-card-label">501(c)(3) Pending</div>
+        <div class="network-card-name">HelpAVet.us</div>
+        <div class="network-card-desc">Funds Coach Jeff for veterans who can't afford it</div>
+        <div class="network-card-url">helpavet.us</div>
+      </a>
+      <a href="https://rustylive.com" class="network-card" target="_blank">
+        <div class="network-card-label">Personal Brand</div>
+        <div class="network-card-name">Rusty Humphries</div>
+        <div class="network-card-desc">The builder — 30 years, 250+ affiliates, nationwide</div>
+        <div class="network-card-url">rustylive.com</div>
+      </a>
+      <a href="https://getadvancedmedia.com" class="network-card" target="_blank">
+        <div class="network-card-label">Agency</div>
+        <div class="network-card-name">Advanced Media &amp; Marketing</div>
+        <div class="network-card-desc">Story-first communication, video, Google &amp; Meta advertising</div>
+        <div class="network-card-url">getadvancedmedia.com</div>
+      </a>
+      <a href="https://caristhestar.com" class="network-card" target="_blank">
+        <div class="network-card-label">Platform</div>
+        <div class="network-card-name">Car Is The Star</div>
+        <div class="network-card-desc">AI video presence system for automotive dealerships</div>
+        <div class="network-card-url">caristhestar.com</div>
+      </a>
+      <a href="https://podcast-perfection.com" class="network-card" target="_blank">
+        <div class="network-card-label">Services</div>
+        <div class="network-card-name">Podcast Perfection</div>
+        <div class="network-card-desc">Full-service podcast production — built by a 30-year pro</div>
+        <div class="network-card-url">podcast-perfection.com</div>
+      </a>
+      <a href="https://politiwin.com" class="network-card" target="_blank">
+        <div class="network-card-label">Strategy</div>
+        <div class="network-card-name">PolitiWin</div>
+        <div class="network-card-desc">Conservative political advertising — 100% win rate</div>
+        <div class="network-card-url">politiwin.com</div>
+      </a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-
-    <!-- 1. Hero -->
-    <section class="section section--hero">
-      <div class="container text-center">
-        <div class="hero-brand">
-          <img src="assets/logo-mybffcoach.png" alt="MyBFF Coach" class="hero-logo">
-        </div>
-        <h1 class="hero-headline">Intelligence that remembers.<br>Guidance that lasts.</h1>
-        <p class="hero-sub">A human-centered AI platform built for continuity, trust, and long-term care &mdash; designed so people feel understood, not processed.</p>
-      </div>
-    </section>
-
-    <!-- 2. Platform Summary -->
-    <section class="section">
-      <div class="container container--narrow">
-        <h4 class="section-label">The Platform</h4>
-        <h2 class="section-title">Built for what most technology ignores</h2>
-        <div class="section-body">
-          <p>MyBFF Coach pairs advanced AI with persistent human understanding. The platform is designed around a simple but overlooked truth: people don't change because they're given better information. They change when they feel understood, remembered, and guided by something consistent over time.</p>
-          <p>Unlike conventional tools that reset with every session, MyBFF Coach maintains continuity &mdash; learning, adapting, and growing alongside each person it serves.</p>
-          <a href="platform.html" class="section-link">Explore the platform</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. Why We're Different -->
-    <section class="section section--alt">
-      <div class="container container--narrow">
-        <h4 class="section-label">Why We're Different</h4>
-        <h2 class="section-title">A fundamentally different approach</h2>
-        <ul class="feature-list">
-          <li><strong>Continuity over convenience.</strong> The platform remembers what matters &mdash; across sessions, across time. It doesn't reset. It doesn't forget.</li>
-          <li><strong>Trust over throughput.</strong> Built to serve people over years, not sessions. Designed for durability, not rapid scale.</li>
-          <li><strong>Presence over performance.</strong> Less like a tool, more like a reliable presence that grows alongside the people it serves.</li>
-        </ul>
-        <a href="why-different.html" class="section-link">Learn what sets us apart</a>
-      </div>
-    </section>
-
-    <!-- 4. Product Ecosystem Preview -->
-    <section class="section">
-      <div class="container text-center">
-        <h4 class="section-label">Product Ecosystem</h4>
-        <h2 class="section-title">Specialized implementations, one platform</h2>
-        <p class="text-muted" style="max-width: 560px; margin: 0 auto;">Each implementation is purpose-built for a specific audience &mdash; with its own personality, focus, and voice &mdash; all powered by the MyBFF Coach platform.</p>
-        <div class="icon-grid">
-          <div class="icon-grid-item">
-            <img src="assets/icons/mybff-icon-01.png" alt="MyBFF Coach variant">
-          </div>
-          <div class="icon-grid-item">
-            <img src="assets/icons/mybff-icon-02.png" alt="MyBFF Coach variant">
-          </div>
-          <div class="icon-grid-item">
-            <img src="assets/icons/mybff-icon-03.png" alt="MyBFF Coach variant">
-          </div>
-          <div class="icon-grid-item">
-            <img src="assets/icons/coach-jeff.png" alt="Coach Jeff">
-            <span>Coach Jeff</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Coach Jeff Highlight -->
-    <section class="section section--alt">
-      <div class="container container--narrow">
-        <h4 class="section-label">Coach Jeff</h4>
-        <h2 class="section-title">Built for those who've earned trust the hard way</h2>
-        <div class="section-body">
-          <p>Coach Jeff is one of the platform's first specialized implementations &mdash; designed to support veterans living with PTSD. It is built for continuity and trust: a system that does not disengage when conversations get difficult, does not forget what matters, and does not disappear when consistency is needed most.</p>
-          <p>Trust is not rushed. It's earned, gradually.</p>
-          <a href="coach-jeff.html" class="section-link">Learn about Coach Jeff</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Founder Anchor -->
-    <section class="section founder-section">
-      <div class="container">
-        <div class="founder-layout">
-          <img src="assets/founder-rusty.png" alt="Rusty Humphries, Founder of MyBFF Coach" class="founder-photo">
-          <div class="founder-content">
-            <h2>Founder</h2>
-            <p>Rusty Humphries is the founder of MyBFF Coach, a human-centered AI platform built to restore connection, continuity, and trust in an increasingly disconnected world.</p>
-            <p>Over more than three decades, Humphries has worked in environments where attention cannot be demanded and trust cannot be faked &mdash; spanning national broadcasting, large-scale brand leadership, and applied behavioral systems. Across these domains, one pattern became clear: people don't change because they're given better information. They change when they feel understood, remembered, and guided by something consistent over time.</p>
-            <p>MyBFF Coach was created from that understanding. The platform is built on the belief that intelligence alone is not enough &mdash; and that most modern technology fails not because it lacks capability, but because it lacks continuity. MyBFF Coach pairs advanced AI with persistent human understanding, designed so users don't feel processed or reset, but known. Less like a tool, more like a reliable presence that grows alongside them.</p>
-            <p>One of the platform's first specialized implementations, Coach Jeff, reflects this philosophy directly. Designed to support veterans living with PTSD, Coach Jeff is built for continuity and trust &mdash; a system that does not disengage when conversations get difficult, does not forget what matters, and does not disappear when consistency is needed most. Trust is not rushed. It's earned, gradually.</p>
-            <p>Humphries remains deeply involved in the long-term development of the platform, with a deliberate focus on durability, ethical scale, and systems designed to serve people over years &mdash; not sessions. MyBFF Coach is not built to impress quickly. It is built to last.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. Ethics Reassurance -->
-    <section class="section">
-      <div class="container container--narrow">
-        <h4 class="section-label">Ethics &amp; Trust</h4>
-        <h2 class="section-title">Responsibility is not an afterthought</h2>
-        <div class="section-body">
-          <p>MyBFF Coach is built with a deep commitment to ethical AI &mdash; not as a compliance exercise, but as a foundational design principle. Every system decision reflects a belief that technology should serve people transparently, safely, and with lasting accountability.</p>
-          <a href="ethics.html" class="section-link">Read our ethics framework</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. Road Ahead Teaser -->
-    <section class="section section--alt">
-      <div class="container container--narrow">
-        <h4 class="section-label">The Road Ahead</h4>
-        <h2 class="section-title">Building for the long term</h2>
-        <div class="section-body">
-          <p>MyBFF Coach is designed to grow deliberately &mdash; expanding into new domains, deepening its capabilities, and scaling with the same care and intention that shaped its foundation. What comes next is not about speed. It's about getting it right.</p>
-          <a href="road-ahead.html" class="section-link">See what's ahead</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-text">&copy; 2026 MyBFF Coach. All rights reserved.</p>
+<!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">MyBFF Coach</div>
+    <div class="footer-links">
+      <a href="https://coachjeff.ai" target="_blank">Coach Jeff</a>
+      <a href="https://helpavet.us" target="_blank">HelpAVet.us</a>
+      <a href="https://rustylive.com" target="_blank">Rusty Humphries</a>
+      <a href="https://getadvancedmedia.com" target="_blank">Advanced Media</a>
+      <a href="mailto:rusty@mybffcoach.com">Contact</a>
     </div>
-  </footer>
+    <div class="footer-copy">&copy; 2026 MyBFF Coach — Phoenix, AZ</div>
+  </div>
+</footer>
 
-  <script>
-    (function () {
-      var toggle = document.querySelector('.nav-toggle');
-      var nav = document.querySelector('.site-nav');
-      if (!toggle || !nav) return;
-      toggle.addEventListener('click', function () {
-        var open = nav.classList.toggle('open');
-        toggle.classList.toggle('open', open);
-        toggle.setAttribute('aria-expanded', open);
+<!-- ═══ SCRIPTS ═══════════════════════════════════════════ -->
+<script>
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+  // ── NEURAL NETWORK CANVAS ────────────────────────────────
+  if (!isMobile) {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H;
+
+    function resize() {
+      W = canvas.width = canvas.offsetWidth;
+      H = canvas.height = canvas.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+
+    const NODE_COUNT = 55;
+    const CONNECT_DIST = 180;
+
+    const nodes = Array.from({ length: NODE_COUNT }, (_, i) => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      r: i === 0 ? 6 : (1.5 + Math.random() * 2.5),
+      hub: i === 0,
+      color: Math.random() > 0.65 ? 'purple' : 'cyan',
+      pulse: Math.random() * Math.PI * 2,
+    }));
+
+    // Place hub node near center
+    nodes[0].x = W * 0.5;
+    nodes[0].y = H * 0.5;
+    nodes[0].vx = 0; nodes[0].vy = 0;
+
+    // Pulses: { from, to, progress, speed }
+    const pulses = [];
+    function spawnPulse() {
+      const target = 1 + Math.floor(Math.random() * (NODE_COUNT - 1));
+      pulses.push({ from: 0, to: target, progress: 0, speed: 0.008 + Math.random() * 0.012 });
+    }
+    setInterval(spawnPulse, 600);
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+
+      // Draw connections
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < CONNECT_DIST) {
+            const alpha = (1 - d / CONNECT_DIST) * 0.18;
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle = `rgba(0,212,255,${alpha})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw pulse particles
+      for (let p = pulses.length - 1; p >= 0; p--) {
+        const pulse = pulses[p];
+        pulse.progress += pulse.speed;
+        if (pulse.progress >= 1) { pulses.splice(p, 1); continue; }
+        const from = nodes[pulse.from], to = nodes[pulse.to];
+        const px = from.x + (to.x - from.x) * pulse.progress;
+        const py = from.y + (to.y - from.y) * pulse.progress;
+        const fade = pulse.progress < 0.5 ? pulse.progress * 2 : (1 - pulse.progress) * 2;
+        ctx.beginPath();
+        ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,212,255,${fade * 0.9})`;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(px, py, 6, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,212,255,${fade * 0.15})`;
+        ctx.fill();
+      }
+
+      // Draw nodes
+      nodes.forEach((n, i) => {
+        n.pulse += 0.02;
+        const glow = n.hub ? 0.9 + 0.1 * Math.sin(n.pulse) : 0.5 + 0.3 * Math.sin(n.pulse);
+        const r = n.r;
+        const color = n.color === 'purple' ? '139,92,246' : '0,212,255';
+
+        if (n.hub) {
+          // Hub glow
+          const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, 40);
+          grad.addColorStop(0, `rgba(0,212,255,0.3)`);
+          grad.addColorStop(1, `rgba(0,212,255,0)`);
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, 40, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
+          ctx.fill();
+        }
+
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${color},${glow})`;
+        ctx.fill();
+
+        // Move
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0 || n.x > W) n.vx *= -1;
+        if (n.y < 0 || n.y > H) n.vy *= -1;
       });
-      nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          nav.classList.remove('open');
-          toggle.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    })();
-  </script>
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  // ── SCROLL PROGRESS ─────────────────────────────────────
+  const prog = document.getElementById('scroll-progress');
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    prog.style.width = pct + '%';
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // ── GSAP ─────────────────────────────────────────────────
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance
+  gsap.timeline({ delay: 0.2 })
+    .to('.hero-badge',   { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' })
+    .to('.hero-h1',      { opacity: 1, y: 0, duration: 1.0, ease: 'power3.out' }, '-=0.3')
+    .to('.hero-sub',     { opacity: 1, y: 0, duration: 0.9, ease: 'power2.out' }, '-=0.5')
+    .to('.hero-stats',   { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' }, '-=0.4')
+    .to('.hero-actions', { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' }, '-=0.3');
+
+  // Scroll reveals
+  gsap.utils.toArray('.anim').forEach(el => {
+    gsap.to(el, {
+      opacity: 1,
+      y: 0,
+      duration: 0.85,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 82%',
+        once: true,
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
