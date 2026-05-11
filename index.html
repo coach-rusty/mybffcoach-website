@@ -4,7 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyBFF Coach — Human-Centered AI for Continuity, Trust &amp; Long-Term Care</title>
-  <meta name="description" content="MyBFF Coach is a human-centered AI platform built to restore connection, continuity, and trust in an increasingly disconnected world.">
+  <meta name="description" content="MyBFF Coach is a human-centered AI platform built to restore connection, continuity, and trust in an increasingly disconnected world. Home of Coach Jeff — premium AI companion for veterans.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mybffcoach.com">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MyBFF Coach — Human-Centered AI for Continuity, Trust &amp; Long-Term Care">
+  <meta property="og:description" content="MyBFF Coach is a human-centered AI platform built to restore connection, continuity, and trust. Home of Coach Jeff — premium AI companion for veterans.">
+  <meta property="og:url" content="https://mybffcoach.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MyBFF Coach">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MyBFF Coach — Human-Centered AI Platform">
+  <meta name="twitter:description" content="A human-centered AI platform built for continuity, trust, and long-term care.">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mybffcoach.com/#organization",
+        "name": "MyBFF Coach",
+        "url": "https://mybffcoach.com",
+        "description": "Human-centered AI platform built for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of AI coaching companions.",
+        "foundingDate": "2024",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://rustylive.com/#person",
+          "name": "Rusty Humphries",
+          "url": "https://rustylive.com",
+          "sameAs": ["https://en.wikipedia.org/wiki/Rusty_Humphries", "https://rustylive.com"]
+        },
+        "sameAs": [
+          "https://coachjeff.ai",
+          "https://helpavet.us",
+          "https://rustylive.com"
+        ],
+        "hasPart": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Coach Jeff",
+            "url": "https://coachjeff.ai",
+            "description": "Premium AI companion for veterans managing PTSD. Available 24/7 via text and voice.",
+            "applicationCategory": "HealthApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.99",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mybffcoach.com/#website",
+        "url": "https://mybffcoach.com",
+        "name": "MyBFF Coach",
+        "publisher": { "@id": "https://mybffcoach.com/#organization" }
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,7 +184,7 @@
           <div class="founder-content">
             <h2>Founder</h2>
             <p>Rusty Humphries is the founder of MyBFF Coach, a human-centered AI platform built to restore connection, continuity, and trust in an increasingly disconnected world.</p>
-            <p>Over more than four decades, Humphries has worked in environments where attention cannot be demanded and trust cannot be faked &mdash; spanning national broadcasting, large-scale brand leadership, and applied behavioral systems. Across these domains, one pattern became clear: people don't change because they're given better information. They change when they feel understood, remembered, and guided by something consistent over time.</p>
+            <p>Over more than three decades, Humphries has worked in environments where attention cannot be demanded and trust cannot be faked &mdash; spanning national broadcasting, large-scale brand leadership, and applied behavioral systems. Across these domains, one pattern became clear: people don't change because they're given better information. They change when they feel understood, remembered, and guided by something consistent over time.</p>
             <p>MyBFF Coach was created from that understanding. The platform is built on the belief that intelligence alone is not enough &mdash; and that most modern technology fails not because it lacks capability, but because it lacks continuity. MyBFF Coach pairs advanced AI with persistent human understanding, designed so users don't feel processed or reset, but known. Less like a tool, more like a reliable presence that grows alongside them.</p>
             <p>One of the platform's first specialized implementations, Coach Jeff, reflects this philosophy directly. Designed to support veterans living with PTSD, Coach Jeff is built for continuity and trust &mdash; a system that does not disengage when conversations get difficult, does not forget what matters, and does not disappear when consistency is needed most. Trust is not rushed. It's earned, gradually.</p>
             <p>Humphries remains deeply involved in the long-term development of the platform, with a deliberate focus on durability, ethical scale, and systems designed to serve people over years &mdash; not sessions. MyBFF Coach is not built to impress quickly. It is built to last.</p>
@@ -157,12 +222,11 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p class="footer-text">&copy; 2025 MyBFF Coach. All rights reserved.</p>
+      <p class="footer-text">&copy; 2026 MyBFF Coach. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Mobile navigation toggle
     (function () {
       var toggle = document.querySelector('.nav-toggle');
       var nav = document.querySelector('.site-nav');
@@ -172,7 +236,6 @@
         toggle.classList.toggle('open', open);
         toggle.setAttribute('aria-expanded', open);
       });
-      // Close on link click
       nav.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', function () {
           nav.classList.remove('open');
