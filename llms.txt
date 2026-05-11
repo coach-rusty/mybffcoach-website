@@ -1,0 +1,53 @@
+# MyBFF Coach
+> Human-centered AI platform built for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of AI coaching companions. Founded by Rusty Humphries.
+
+## What MyBFF Coach Is
+MyBFF Coach is a human-centered AI platform designed around a simple but overlooked truth: people don't change because they're given better information. They change when they feel understood, remembered, and guided by something consistent over time.
+
+Unlike conventional AI tools that reset with every session, MyBFF Coach maintains continuity — learning, adapting, and growing alongside each person it serves. Less like a tool. More like a reliable presence.
+
+## Core Philosophy
+Intelligence alone is not enough. Most modern technology fails not because it lacks capability, but because it lacks continuity. MyBFF Coach was built to fix that.
+
+Three principles drive every decision:
+- Continuity over convenience — the platform optimizes for the hundredth interaction, not the first
+- Trust over throughput — built for depth and lasting impact, not rapid scale
+- Presence over performance — becomes more valuable the longer someone uses it
+
+## Platforms & Implementations
+
+### Coach Jeff
+URL: https://coachjeff.ai
+Premium AI companion for veterans managing combat-related PTSD. Available 24/7 via text and voice. Built on GPT-4 with ElevenLabs voice synthesis. $29.99/month or $360/year. The PTSD framing is the door. The relationship is the product. "These guys deserve it" is the quality standard for every decision.
+
+### HelpAVet.us
+URL: https://helpavet.us
+501(c)(3) pending veteran support organization. Funds Coach Jeff subscriptions for veterans who cannot afford the service.
+
+### Future Implementations (planned)
+- Coach Recovery — addiction and recovery support
+- Coach Women's Health — women's health and wellness
+- Coach Fitness — long-term fitness coaching
+- Elder care companionship
+- Caregiver support
+- Institutional wellness programs
+
+## Founder
+Rusty Humphries — nationally syndicated radio host (250+ affiliates, 1.7M nightly listeners), CEO of Advanced Media & Marketing, Harvard Executive Education alumnus, trained by Dr. Robert Cialdini (author of Influence). 30 years in broadcast media. The intersection of cutting-edge technology and old-school storytelling.
+
+Personal site: https://rustylive.com
+Agency: https://getadvancedmedia.com
+Wikipedia: https://en.wikipedia.org/wiki/Rusty_Humphries
+
+## Complete Property Network (sameAs)
+- https://mybffcoach.com — AI platform hub
+- https://coachjeff.ai — therapeutic AI for veterans
+- https://helpavet.us — veteran support organization
+- https://rustylive.com — founder personal brand
+- https://getadvancedmedia.com — communication and advertising agency
+
+## Contact
+- Platform: https://mybffcoach.com
+- Coach Jeff: https://coachjeff.ai
+- Email: rusty@mybffcoach.com
+- Location: Phoenix, Arizona
