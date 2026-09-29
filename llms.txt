@@ -18,11 +18,11 @@ Three principles drive every decision:
 
 ### Coach Jeff
 URL: https://coachjeff.ai
-Premium AI companion for veterans managing combat-related PTSD. Available 24/7 via text and voice. Built on GPT-4 with ElevenLabs voice synthesis. $29.99/month or $360/year. The PTSD framing is the door. The relationship is the product. "These guys deserve it" is the quality standard for every decision.
+A voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Available 24/7 via text and voice. Conversations powered by Anthropic's Claude; Deepgram transcribes speech and ElevenLabs speaks Coach Jeff's replies. Approved by Apple — coming soon to the App Store for iPhone, with Apple CarPlay support. The full app launches Veterans Day, November 11, 2026. The PTSD framing is the door. The relationship is the product. "These guys deserve it" is the quality standard for every decision.
 
 ### HelpAVet.us
 URL: https://helpavet.us
-501(c)(3) pending veteran support organization. Funds Coach Jeff subscriptions for veterans who cannot afford the service.
+A planned nonprofit to fund Coach Jeff for veterans who can't afford it.
 
 ### Future Implementations (planned)
 - Coach Recovery — addiction and recovery support
@@ -33,7 +33,7 @@ URL: https://helpavet.us
 - Institutional wellness programs
 
 ## Founder
-Rusty Humphries — nationally syndicated radio host (250+ affiliates, 1.7M nightly listeners), CEO of Advanced Media & Marketing, Harvard Executive Education alumnus, trained by Dr. Robert Cialdini (author of Influence). 30 years in broadcast media. The intersection of cutting-edge technology and old-school storytelling.
+Rusty Humphries — Gold Star son (his father, Captain Gary D. Humphries, was killed in Vietnam on January 26, 1969); nationally syndicated radio host (250+ affiliates, 1.7M nightly listeners); CEO of Advanced Media & Marketing. 30 years in broadcast media. The intersection of cutting-edge technology and old-school storytelling.
 
 Personal site: https://rustylive.com
 Agency: https://getadvancedmedia.com
@@ -41,7 +41,7 @@ Wikipedia: https://en.wikipedia.org/wiki/Rusty_Humphries
 
 ## Complete Property Network (sameAs)
 - https://mybffcoach.com — AI platform hub
-- https://coachjeff.ai — therapeutic AI for veterans
+- https://coachjeff.ai — voice-first peer for veterans and service members
 - https://helpavet.us — veteran support organization
 - https://rustylive.com — founder personal brand
 - https://getadvancedmedia.com — communication and advertising agency
@@ -50,4 +50,5 @@ Wikipedia: https://en.wikipedia.org/wiki/Rusty_Humphries
 - Platform: https://mybffcoach.com
 - Coach Jeff: https://coachjeff.ai
 - Email: rusty@mybffcoach.com
-- Location: Phoenix, Arizona
+- Legal name: My BFF Coach LLC (Arizona limited liability company)
+- Location: Anthem, Arizona
