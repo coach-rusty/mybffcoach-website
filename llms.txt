@@ -39,6 +39,14 @@ Personal site: https://rustylive.com
 Agency: https://getadvancedmedia.com
 Wikipedia: https://en.wikipedia.org/wiki/Rusty_Humphries
 
+## Insights (articles by Rusty Humphries)
+Hub: https://mybffcoach.com/insights/
+- What Is an AI Relationship Platform? — https://mybffcoach.com/insights/what-is-an-ai-relationship-platform/
+- What AI Can and Can't Do for Veterans With PTSD — https://mybffcoach.com/insights/what-ai-can-and-cant-do-for-veterans-with-ptsd/
+- What Is Persistent Memory in AI, and Why Does It Matter? — https://mybffcoach.com/insights/what-is-persistent-memory-in-ai-and-why-does-it-matter/
+- What Earns a Veteran's Trust in an App? — https://mybffcoach.com/insights/what-earns-a-veterans-trust-in-an-app/
+- MyBFF Coach vs. a General AI Chatbot — https://mybffcoach.com/insights/mybff-coach-vs-a-general-ai-chatbot/
+
 ## Complete Property Network (sameAs)
 - https://mybffcoach.com — AI platform hub
 - https://coachjeff.ai — voice-first peer for veterans and service members
