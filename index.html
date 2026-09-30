@@ -21,89 +21,135 @@
 
   
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://mybffcoach.com/#organization",
-        "name": "MyBFF Coach",
-        "legalName": "My BFF Coach LLC",
-        "address": { "@type": "PostalAddress", "addressLocality": "Anthem", "addressRegion": "AZ", "addressCountry": "US" },
-        "alternateName": "MyBFFCoach",
-        "url": "https://mybffcoach.com",
-        "description": "Human-centered AI platform for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of specialized AI coaching companions.",
-        "foundingDate": "2024",
-        "founder": {
-          "@type": "Person",
-          "@id": "https://rustylive.com/#person",
-          "name": "Rusty Humphries",
-          "jobTitle": "Founder & CEO",
-          "url": "https://rustylive.com",
-          "description": "Nationally syndicated radio host, communication strategist, and AI platform builder. 30 years in broadcast media. 250+ national affiliates.",
-          "award": "Nevada Broadcasters Hall of Fame — youngest inductee in history",
-          "sameAs": [
-            "https://en.wikipedia.org/wiki/Rusty_Humphries",
-            "https://rustylive.com",
-            "https://getadvancedmedia.com"
-          ]
-        },
-        "hasPart": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "Coach Jeff",
-            "url": "https://coachjeff.ai",
-            "applicationCategory": "HealthApplication",
-            "description": "A voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Approved by Apple — coming soon to the App Store.",
-            "operatingSystem": "iOS"
-          }
-        ],
+  <script type="application/ld+json">  
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mybffcoach.com/#organization",
+      "name": "MyBFF Coach",
+      "legalName": "My BFF Coach LLC",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Anthem",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "alternateName": "MyBFFCoach",
+      "url": "https://mybffcoach.com",
+      "description": "Human-centered AI platform for continuity, trust, and long-term care. Parent platform of Coach Jeff and a growing family of specialized AI coaching companions.",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://rustylive.com/#person",
+        "name": "Rusty Humphries",
+        "jobTitle": "Founder & CEO",
+        "url": "https://rustylive.com",
+        "description": "Nationally syndicated radio host, communication strategist, and AI platform builder. 30 years in broadcast media. 250+ national affiliates.",
+        "award": "Nevada Broadcasters Hall of Fame — youngest inductee in history",
         "sameAs": [
-          "https://coachjeff.ai",
-          "https://helpavet.us",
-          "https://rustylive.com"
+          "https://en.wikipedia.org/wiki/Rusty_Humphries",
+          "https://rustylive.com",
+          "https://getadvancedmedia.com"
         ]
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://mybffcoach.com/#website",
-        "url": "https://mybffcoach.com",
-        "name": "MyBFF Coach",
-        "publisher": { "@id": "https://mybffcoach.com/#organization" }
+      "hasPart": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Coach Jeff",
+          "url": "https://coachjeff.ai",
+          "applicationCategory": "HealthApplication",
+          "description": "A voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Approved by Apple — coming soon to the App Store.",
+          "operatingSystem": "iOS"
+        }
+      ],
+      "sameAs": [
+        "https://coachjeff.ai",
+        "https://helpavet.us",
+        "https://rustylive.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mybffcoach.com/#website",
+      "url": "https://mybffcoach.com",
+      "name": "MyBFF Coach",
+      "publisher": {
+        "@id": "https://mybffcoach.com/#organization"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is MyBFF Coach?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "MyBFF Coach is a human-centered AI platform that powers a family of specialized AI coaches. Each coach is purpose-built for a specific audience — veterans, people in recovery, women's health, fitness, medical navigation — all running on the same persistent, relationship-first architecture."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Coach Jeff?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Coach Jeff is the first specialized implementation of MyBFF Coach — a voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Approved by Apple — coming soon to the App Store."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who built MyBFF Coach?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "MyBFF Coach was built by Rusty Humphries — nationally syndicated radio host (250+ affiliates, 1.7 million nightly listeners), CEO of Advanced Media & Marketing, and communications strategist."
-            }
+      "hasPart": [
+        {
+          "@id": "https://mybffcoach.com/insights/#blog"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MyBFF Coach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MyBFF Coach is a human-centered AI platform that powers a family of specialized AI coaches. Each coach is purpose-built for a specific audience — veterans, people in recovery, women's health, fitness, medical navigation — all running on the same persistent, relationship-first architecture."
           }
-        ]
-      }
-    ]
-  }
-  </script>
+        },
+        {
+          "@type": "Question",
+          "name": "What is Coach Jeff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coach Jeff is the first specialized implementation of MyBFF Coach — a voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Approved by Apple — coming soon to the App Store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who built MyBFF Coach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MyBFF Coach was built by Rusty Humphries — nationally syndicated radio host (250+ affiliates, 1.7 million nightly listeners), CEO of Advanced Media & Marketing, and communications strategist."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://mybffcoach.com/insights/#blog",
+      "url": "https://mybffcoach.com/insights/",
+      "name": "MyBFF Coach Insights",
+      "description": "Straight answers about AI relationship platforms, veterans and PTSD, persistent memory and trust, from MyBFF Coach founder Rusty Humphries.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://mybffcoach.com/#website"
+      },
+      "publisher": {
+        "@id": "https://mybffcoach.com/#organization"
+      },
+      "author": {
+        "@id": "https://rustylive.com/#person"
+      },
+      "blogPost": [
+        {
+          "@id": "https://mybffcoach.com/insights/what-is-an-ai-relationship-platform/#article"
+        },
+        {
+          "@id": "https://mybffcoach.com/insights/what-ai-can-and-cant-do-for-veterans-with-ptsd/#article"
+        },
+        {
+          "@id": "https://mybffcoach.com/insights/what-is-persistent-memory-in-ai-and-why-does-it-matter/#article"
+        },
+        {
+          "@id": "https://mybffcoach.com/insights/what-earns-a-veterans-trust-in-an-app/#article"
+        },
+        {
+          "@id": "https://mybffcoach.com/insights/mybff-coach-vs-a-general-ai-chatbot/#article"
+        }
+      ]
+    }
+  ]
+}
+    </script>
   <script>document.documentElement.className+=' js';if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.className+=' rm';</script>
 
   <link rel="preload" href="assets/v2/fonts/is-400.woff2" as="font" type="font/woff2" crossorigin>
