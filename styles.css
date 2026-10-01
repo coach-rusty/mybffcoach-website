@@ -629,3 +629,34 @@ p:last-child {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+/* --- Early user quotes --- */
+.user-quote {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) var(--space-md) var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--color-gold);
+  background: var(--color-bg-card);
+}
+.user-quote p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  font-style: italic;
+}
+.user-quote footer {
+  margin-top: var(--space-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gold);
+}
+.user-quote footer span {
+  display: block;
+  margin-top: 0.35rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+@media (max-width: 720px) {
+  .user-quote { padding: var(--space-md); }
+}
