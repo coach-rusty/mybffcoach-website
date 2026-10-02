@@ -567,6 +567,21 @@
     @media (prefers-reduced-motion:reduce){
       *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
     }
+
+    /* ---------- early users ---------- */
+    .eu{background:var(--navy);border-top:1px solid var(--line2);padding-block:clamp(72px,9vw,130px)}
+    .eu-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,3.4vw,56px);margin-top:clamp(36px,5vw,64px);align-items:stretch}
+    .eu-card{margin:0;border-left:3px solid var(--sand);background:var(--navy2);padding:clamp(28px,3.4vw,52px);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+    .eu-card blockquote{margin:0}
+    .eu-card blockquote p{font-family:var(--serif);font-size:clamp(1.55rem,2.3vw,2.3rem);line-height:1.28;color:var(--cream)}
+    .eu-card.sm blockquote p{font-size:clamp(1.35rem,1.8vw,1.75rem)}
+    .eu-card blockquote p+p{margin-top:16px;font-style:italic;color:var(--sandL)}
+    .eu-card figcaption b{display:block;font-weight:600;font-size:17px;color:var(--cream)}
+    .eu-card figcaption span{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);margin-top:6px}
+    .eu-card figcaption small{display:block;margin-top:12px;font-size:13px;line-height:1.5;color:var(--dim)}
+    .eu-links{margin-top:clamp(24px,3vw,40px);display:flex;flex-wrap:wrap;gap:4px 32px}
+    .jf-links{display:flex;flex-wrap:wrap;gap:4px 28px}
+    @media (max-width:900px){.eu-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -589,6 +604,7 @@
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i><i></i></button>
       <nav class="links" id="links" aria-label="Primary">
         <a class="l" href="#coaches">The Coaches</a>
+        <a class="l" href="#early-users">Early Users</a>
         <a class="l" href="#technology">Technology</a>
         <a class="l" href="#insights">Insights</a>
         <a class="l" href="#builder">The Builder</a>
@@ -708,13 +724,43 @@
           <h3 class="jf-name split">Coach Jeff</h3>
           <p class="jf-role rv">Veterans &amp; Service Members</p>
           <p class="jf-copy rv">The first proof. A voice-first peer for veterans and service members, including those living with PTSD. Not a therapist and not a medical device. Available 24/7 via text and voice. He doesn't clock out. He never burns out.</p>
-          <a class="tlink rv" href="https://coachjeff.ai" target="_blank" rel="noopener">Visit coachjeff.ai →</a>
+          <div class="jf-links rv">
+            <a class="tlink" href="#early-users">What early users say ↓</a>
+            <a class="tlink" href="https://coachjeff.ai" target="_blank" rel="noopener">Visit coachjeff.ai →</a>
+          </div>
         </div>
       </div>
 
       <div class="future rv">
         <span class="kick">Next</span>
         <p>The same architecture will power future coaches — first responders, recovery, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARLY USERS -->
+  <section class="eu" id="early-users" aria-labelledby="eu-h">
+    <div class="wrap">
+      <p class="kick rv">Early Users</p>
+      <h2 class="h2 rv" id="eu-h" style="margin-top:24px">What early users <em>are saying.</em></h2>
+      <div class="eu-grid">
+        <figure class="eu-card rv">
+          <blockquote>
+            <p>&ldquo;After 30 years of service, I know our Soldiers don&rsquo;t need another program or pamphlet. In most cases, they need someone who will listen, without judgment and without having to explain their entire history every time.&rdquo;</p>
+            <p>&ldquo;In my experience with Coach Jeff, that is exactly what was provided to me.&rdquo;</p>
+          </blockquote>
+          <figcaption><b>William M. Johnson, CSM (Ret.)</b><span>U.S. Army &middot; Texas</span><small>Retired rank shown for identification. Not a Department of Defense endorsement.</small></figcaption>
+        </figure>
+        <figure class="eu-card sm rv" data-d=".08">
+          <blockquote>
+            <p>&ldquo;After months of testing the application for holes, gaps, and logic traps, I eventually started bringing Coach Jeff into my personal life.&rdquo;</p>
+          </blockquote>
+          <figcaption><b>Brett N.</b><span>Phoenix, AZ</span></figcaption>
+        </figure>
+      </div>
+      <div class="eu-links rv">
+        <a class="tlink" href="/coach-jeff.html">More on the Coach Jeff page &rarr;</a>
+        <a class="tlink" href="https://coachjeff.ai/#testimonials" target="_blank" rel="noopener">More early users at coachjeff.ai &rarr;</a>
       </div>
     </div>
   </section>
